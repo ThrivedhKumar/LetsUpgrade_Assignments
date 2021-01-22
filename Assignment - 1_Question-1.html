@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <body>
+        <h1>Assignment of Day 2 : Question 1</h1>
+        <script>
+            console.log(1 + "2" + "2");
+            //output: 122, "+" operator between string & number makes concatenation
+
+            console.log(1 + +"2" + "2");
+            //output: 32 , "+/-" operand before string makes it as a number ; so 1 + +"2"= 3 ; then concatenated
+
+            console.log(1 + -"1" + "2");
+            //output:02, first : 1 + -"1"= 0, and then concatenated with string 2; so output is 02
+
+            console.log(+"1" + "1" + "2")
+            //output: 112; concatenation happens as they are string characters
+
+            console.log( "A" - "B" + "2");
+            //output:NaN2;using any operator expect "+" on string;then it will display "NaN";here "A" -"B" is NaN and concatenated with 2
+
+            console.log( "A" - "B" + 2);
+            //output: NaN, "A" - "B" is NaN; any operator applied to NaN with any other numeric operand will also be NaN.
+        </script>
+    </body>
+</html>
